@@ -1,0 +1,84 @@
+body{
+    background-color: aqua;
+}
+
+.recipe-page{
+    text-align: center;
+    margin: 1.5rem auto;
+    font-family: "Arial", sans-serif;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    max-width: 1300px;
+}
+
+.recipe-title{
+    font-size: 2.5rem;
+    color: #ff6f61;
+    margin-bottom: 1.2rem;
+}
+
+.recipe-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    max-height: 550px;
+    overflow: hidden;
+}
+
+.recipe-img{
+    width: 45%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+  
+.recipe-details{
+    text-align: left;
+    flex: 1;
+    padding-left: 1.5rem;
+    overflow-y: auto;
+}
+
+.recipe-steps{
+    list-style-position: inside;
+    padding-left: 0;
+    line-height: 1.7;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.step-item{
+    margin-bottom: 1rem;
+}
+
+.back-button{
+    margin-top: 1.5rem;
+    padding: 0.7rem 1.3rem;
+    background: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.back-button:hover{
+    background: #e6554f;
+}
+
+.loading{
+    font-size: 1.5rem;
+    color: #666;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink{
+    50%{
+      opacity: 0.5;
+    }
+}

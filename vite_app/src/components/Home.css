@@ -1,0 +1,44 @@
+.home{
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right, #7d34b0, #02bfff);
+    color: white;
+    text-align: center;
+    margin-top: -26px;
+}
+
+.home-title{
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin-top: -70px;
+}
+
+.home-description{
+    font-size: x-large;
+    margin-bottom: 2rem;
+    opacity: 80%;
+}
+
+.home-cards{
+    display: flex;
+    gap: 2rem;
+}
+
+.home-card{
+    padding: 1.2rem 2.2rem;
+    background: linear-gradient(to bottom left, #af6cad, #2eff37);
+    color: #ffffffcf;
+    font-size: larger;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.home-card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
