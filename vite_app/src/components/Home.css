@@ -1,44 +1,59 @@
 .home{
-    height: 93vh;
+    margin-top: 70px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom right, #7d34b0, #02bfff);
-    color: white;
     text-align: center;
+    background: linear-gradient(to bottom, #1e3a8a, #0ea5e9);
+    color: white;
+    overflow: hidden;
+    position: relative;
     margin-top: -26px;
 }
 
 .home-title{
-    font-size: 3rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    margin-top: -70px;
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem;
+    animation: fadeInDown 1.5s ease-in-out;
 }
 
 .home-description{
-    font-size: x-large;
-    margin-bottom: 2rem;
-    opacity: 80%;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+    animation: fadeInUp 1.5s ease-in-out;
 }
 
 .home-cards{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
+    animation: fadeIn 2s ease-in-out;
 }
-
+  
 .home-card{
-    padding: 1.2rem 2.2rem;
-    background: linear-gradient(to bottom left, #af6cad, #2eff37);
-    color: #ffffffcf;
-    font-size: larger;
-    font-weight: 700;
-    border-radius: 10px;
+    background: linear-gradient(to top, #6b21a8, #9333ea);
+    color: white;
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
     cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
 }
-
+  
 .home-card:hover{
-    transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+  
+.emoji{
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
 }

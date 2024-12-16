@@ -67,6 +67,7 @@
     text-align: center;
     padding: 1rem;
     transition: transform 0.5s, box-shadow 0.5s;
+    cursor: pointer;
 }
 
 .cocktail-card:hover{
@@ -92,4 +93,71 @@
     font-size: 1rem;
     color: #777;
     margin: 0.3rem 0;
+}
+
+.cocktail-detail{
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 800px;
+    background: #f8f8f8;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.detail-title{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.detail-content{
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.detail-image{
+    flex: 1;
+    max-width: 300px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.detail-info{
+    flex: 2;
+    font-size: 1rem;
+    color: #555;
+}
+
+.detail-info p{
+    margin: 0.5rem 0;
+}
+
+.detail-info ul{
+    list-style: none;
+    padding: 0;
+}
+
+.detail-info li{
+    margin: 0.2rem 0;
+    font-size: 0.95rem;
+}
+
+.back-button{
+    display: block;
+    margin: 1.5rem auto;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    color: white;
+    background: #007bff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.back-button:hover{
+    background: #0056b3;
 }

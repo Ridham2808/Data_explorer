@@ -6,31 +6,32 @@ body{
   color: #333;
 }
 
-.navbar {
+.navbar{
   position: fixed;
   top: 0;
   width: 100%;
-  background: linear-gradient(to right, #919100, #d87818);
+  background: linear-gradient(to right, #3b82f6, #10b981);
   padding: 1rem 0;
   display: flex;
   justify-content: center;
-  gap: 7rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  gap: 4rem;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.navbar a {
+.navbar a{
   text-decoration: none;
-  color: white;
-  font-size: larger;
+  color: #fff;
+  font-size: 1.2rem;
   font-weight: bold;
-  transition: color 0.3s;
+  transition: transform 0.3s, color 0.3s;
 }
 
-.navbar a:hover {
-  color: #ffdd57;
-  text-decoration: underline;
+.navbar a:hover{
+  transform: scale(1.1);
+  color: #facc15;
 }
 
-.content {
+.content{
   margin-top: 5rem;
 }
