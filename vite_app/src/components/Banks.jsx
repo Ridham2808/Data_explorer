@@ -10,14 +10,12 @@ const Banks = () => {
   const handleSearch = () => {
     setLoading(true);
     setError("");
-    // Validate if IFSC code is provided
     if (!ifscCode.trim()) {
       setError("Please enter a valid IFSC code.");
       setLoading(false);
       return;
     }
 
-    // Fetching data from API based on IFSC code
     fetch(`https://bank-apis.justinclicks.com/API/V1/IFSC/${ifscCode.toUpperCase()}/`)
       .then((response) => {
         if (!response.ok) {
@@ -39,13 +37,12 @@ const Banks = () => {
     <div className="banks-container">
       <h1 className="banks-title">Search Bank by IFSC Code</h1>
 
-      {/* Search Section */}
       <div className="search-container">
         <input
           type="text"
           placeholder="Enter IFSC Code"
           value={ifscCode}
-          onChange={(e) => setIfscCode(e.target.value)} // Store input value
+          onChange={(e) => setIfscCode(e.target.value)}
           className="search-bar"
         />
         <button onClick={handleSearch} className="search-button">
@@ -53,11 +50,9 @@ const Banks = () => {
         </button>
       </div>
 
-      {/* Display loading or error message */}
       {loading && <p>Loading...</p>}
       {error && <p style={{ color: "red" }}>{error}</p>}
 
-      {/* Display Bank Details */}
       {bankDetails && !loading && (
         <div className="bank-details">
           <h2>{bankDetails.BANK}</h2>
