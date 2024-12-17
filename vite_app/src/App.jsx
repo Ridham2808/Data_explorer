@@ -6,6 +6,7 @@ import Cocktails from "./components/Cocktails";
 import Potter from "./components/Potter";
 import Banks from "./components/Banks";
 import Recipe from "./components/Recipe";
+import Albums from "./components/Albums";
 
 import "./App.css";
 
@@ -18,6 +19,7 @@ const App = () => {
           <Link to="/meals">Meals</Link>
           <Link to="/cocktails">Cocktails</Link>
           <Link to="/potter">Potter</Link>
+          <Link to="/Albums">Albums</Link>
           <Link to="/banks">Banks</Link>
         </nav>
 
@@ -29,6 +31,7 @@ const App = () => {
             <Route path="/cocktails" element={<Cocktails />} />
             <Route path="/potter" element={<Potter />} />
             <Route path="/banks" element={<Banks />} />
+            <Route path="/Albums" element={<Albums />} />
           </Routes>
         </div>
       </div>

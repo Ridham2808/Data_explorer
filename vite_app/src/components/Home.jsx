@@ -6,7 +6,7 @@ const Home = () => {
       <div className="home">
         <h1 className="home-title">Discover the World of React Data Explorer</h1>
         <p className="home-description">
-          An immersive experience to explore Meals, Cocktails, Potter, and Banks Data!
+          An immersive experience to explore Meals, Cocktails, Potter, Albums, and Banks Data!
         </p>
 
         <div className="home-cards">
@@ -24,6 +24,11 @@ const Home = () => {
             <span className="emoji">🪄</span>
             <h3>Potter</h3>
             <p>Magical content from the wizarding world.</p>
+          </div>
+          <div className="home-card">
+            <span className="emoji">🎶</span>
+            <h3>Albums</h3>
+            <p>Explore the best albums and music worldwide.</p>
           </div>
           <div className="home-card">
             <span className="emoji">🏦</span>
