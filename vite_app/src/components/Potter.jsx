@@ -8,9 +8,9 @@ const Potter = () => {
 
   const apiUrls = {
     characters: "https://hp-api.onrender.com/api/characters",
-    books: "https://hp-api.onrender.com/api/books",
-    houses: "https://hp-api.onrender.com/api/houses",
-    spells: "https://hp-api.onrender.com/api/spells",
+    books: "https://potterapi-fedeperin.vercel.app/en/books",
+    houses: "https://potterapi-fedeperin.vercel.app/en/houses",
+    spells: "https://potterapi-fedeperin.vercel.app/en/spells",
   };
 
   useEffect(() => {
@@ -50,7 +50,7 @@ const Potter = () => {
         </div>
       ) : (
         <div className="potter-grid">
-
+          {/* Characters */}
           {activeTab === "characters" &&
             data.map((character, index) => (
               <div className="potter-card" key={index}>
@@ -66,36 +66,48 @@ const Potter = () => {
                 <p><strong>House:</strong> {character.house || "Unknown"}</p>
                 <p><strong>Actor:</strong> {character.actor || "Unknown"}</p>
                 <p><strong>DOB:</strong> {character.dateOfBirth || "N/A"}</p>
+                <p><strong>eyeColour: </strong> {character.eyeColour || "N/A"}</p>
               </div>
             ))}
 
+          {/* Books */}
           {activeTab === "books" &&
             data.map((book, index) => (
               <div className="potter-card" key={index}>
+                <img
+                  src={book.cover}
+                  alt="Book Cover"
+                  className="potter-img"
+                />
                 <h2 className="potter-name">{book.title}</h2>
-                <p><strong>Author:</strong> {book.author}</p>
+                <p><strong>number:</strong> {book.number}</p>
+                <p><strong>Pages:</strong> {book.pages}</p>
                 <p><strong>Release Date:</strong> {book.releaseDate || "N/A"}</p>
               </div>
             ))}
 
+          {/* Houses */}
           {activeTab === "houses" &&
             data.map((house, index) => (
               <div className="potter-card" key={index}>
-                <h2 className="potter-name">{house.name}</h2>
-                <p><strong>Head:</strong> {house.headOfHouse}</p>
+                <p><strong>House:</strong> {house.house}</p>
                 <p><strong>Founder:</strong> {house.founder}</p>
-                <p><strong>Colors:</strong> {house.houseColours}</p>
+                <p><strong>animal:</strong> {house.animal}</p>
+                <p><strong>emoji:</strong> {house.emoji}</p>
               </div>
             ))}
 
+          {/* Spells */}
           {activeTab === "spells" &&
             data.map((spell, index) => (
               <div className="potter-card" key={index}>
                 <h2 className="potter-name">{spell.name}</h2>
-                <p><strong>Type:</strong> {spell.type || "Unknown"}</p>
-                <p><strong>Effect:</strong> {spell.effect || "Unknown"}</p>
+                <p><strong>index:</strong> {spell.index || "0"}</p>
+                <p><strong>spell:</strong> {spell.spell || "Unknown"}</p>
+                <p><strong>use:</strong> {spell.use || "Unknown"}</p>
               </div>
             ))}
+
         </div>
       )}
     </div>

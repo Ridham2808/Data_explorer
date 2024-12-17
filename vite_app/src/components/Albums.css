@@ -1,6 +1,5 @@
-/* General Styles */
 .audio-container,
-.audio-detail {
+.audio-detail{
   text-align: center;
   margin: 2rem auto;
   font-family: Arial, sans-serif;
@@ -8,20 +7,20 @@
   max-width: 1200px;
 }
 
-.audio-title {
+.audio-title{
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
-  color: #5d3fd3;
+  color: black;
 }
 
-.search-bar-container {
+.search-bar-container{
   display: flex;
   justify-content: center;
   gap: 1rem;
   margin-bottom: 2rem;
 }
 
-.search-bar {
+.search-bar{
   width: 50%;
   padding: 0.7rem;
   font-size: 1rem;
@@ -31,12 +30,12 @@
   transition: all 0.3s ease-in-out;
 }
 
-.search-bar:focus {
+.search-bar:focus{
   border-color: #5d3fd3;
   box-shadow: 0 4px 8px rgba(93, 63, 211, 0.2);
 }
 
-.search-button {
+.search-button{
   padding: 0.7rem 1.5rem;
   font-size: 1rem;
   background-color: #5d3fd3;
@@ -47,18 +46,18 @@
   transition: background 0.3s ease;
 }
 
-.search-button:hover {
+.search-button:hover{
   background-color: #4b2caf;
 }
 
-.album-list {
+.album-list{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   padding: 1rem;
 }
 
-.album-card {
+.album-card{
   background: #f8f9fa;
   border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
@@ -68,38 +67,37 @@
   cursor: pointer;
 }
 
-.album-card:hover {
+.album-card:hover{
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.album-img {
+.album-img{
   width: 100%;
   height: 250px;
   object-fit: cover;
   border-radius: 10px;
 }
 
-.album-name {
+.album-name{
   font-size: 1.5rem;
   margin: 0.5rem 0;
   color: #333;
 }
 
-.album-year {
+.album-year{
   font-size: 1.2rem;
   color: #555;
 }
 
-/* Details Page Styles */
-.detail-title {
+.detail-title{
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
   color: #5d3fd3;
   margin-top: -15px;
 }
 
-.detail-content {
+.detail-content{
   display: flex;
   gap: 2rem;
   align-items: flex-start;
@@ -112,7 +110,7 @@
   margin-top: -8px;
 }
 
-.detail-image {
+.detail-image{
   flex: 1;
   max-width: 400px;
   border-radius: 12px;
@@ -121,11 +119,11 @@
   transition: transform 0.3s ease;
 }
 
-.detail-image:hover {
+.detail-image:hover{
   transform: scale(1.05);
 }
 
-.detail-info {
+.detail-info{
   flex: 2;
   text-align: left;
   font-size: 1rem;
@@ -136,16 +134,16 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.detail-info p {
+.detail-info p{
   margin: 0.8rem 0;
 }
 
-.detail-info span {
+.detail-info span{
   font-weight: bold;
   color: #333;
 }
 
-.back-button {
+.back-button{
   background: #5d3fd3;
   color: white;
   padding: 0.7rem 2rem;
@@ -157,12 +155,11 @@
   margin-top: -15px;
 }
 
-.back-button:hover {
+.back-button:hover{
   background: #4b2caf;
 }
 
-/* Animation */
-@keyframes fadeIn {
+@keyframes fadeIn{
   0% {
     opacity: 0;
     transform: translateY(20px);
